@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/myScript.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-1">
+        <div class="container">
+            <div class="col-sm-offset-2 col-sm-8">
+                <form class="form-horizontal forms" id="myForm" onsubmit="return false">
+                    <div class="text-centre">
+                        <h2>Create Profile</h2>
+                    </div>
+
+                    <!-- First Name Input Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" id="thiss">First Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="FName" placeholder="First Name" autofocus>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorFName"></p>
+                    </div>
+
+                    <!-- Last Name Input Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Last Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="LName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorLName"></p>
+                    </div>
+
+                    <!-- Address Input Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Address" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorAddress"></p>
+                    </div>
+
+                    <!-- Email Input Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">E-mail</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Email" placeholder="someone@example.com">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorEmail"></p>
+                    </div>
+
+                    <!-- Phone Input Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Phone Number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="Phone" placeholder="(123) 456 - 7890">
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorPhone"></p>
+                    </div>
+
+
+
+
+                    <!-- Date Option Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Date Of Birth</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="day">
+                                <option>Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control" id="month">
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>Deember</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control" id="year">
+                                <option>Year</option>
+                                <option>1990</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorDate"></p>
+                    </div>
+
+                    <!-- Radio Button For Gender Begin Here -->
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Gender</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline tex">
+                                <input type="radio" name="inlineRadioOptions" id="Male" value="option1"> Male
+                            </label>
+                            <label class="radio-inline tex">
+                                <input type="radio" name="inlineRadioOptions" id="Female" value="option2"> Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <p class="error" id="errorGender"></p>
+                    </div>
+
+                    <!-- Button Begin Here -->
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8">
+                            <button id="save" onclick="main()" class="btn text-greennn">Save</button>
+                            <button  id="clear" class="btn text-redd">Reset</button>
+                            <script type="text/javascript">
+                                document.getElementById('clear').addEventListener('click', function(){
+                                    this.form.reset();
+                                    clear();
+                                    clearform();
+                                });
+                            </script>
+                        </div>
+                    </div>
+
+                    <!-- Fix For Error Begin Here -->
+                    <div class="form-group">
+                        <div class="col-sm-10 control-label">
+                            <h4 id="FixError" class="text-miring">There Was An Error With Your Input !</h4>
+                            <ul>
+                                <li id="FNameBlank"><p class="error">First Name May Not Be Blank <a onclick="FocusError('FNameBlank')"> Fix It</a></p></li>
+                                <li id="FNameNumber"><p class="error">First Name May Not Contains Number <a onclick="FocusError('FNameNumber')"> Fix It</a></p></li>
+                                <li id="LNameBlank"><p class="error">Last Name May Not Be Blank <a onclick="FocusError('LNameBlank')"> Fix It</a></p></li>
+                                <li id="LNameNumber"><p class="error">Last Name May Not Contains Number <a onclick="FocusError('LNameNumber')"> Fix It</a></p></li>
+                                <li id="AddressBlank"><p class="error">Address May Not Contains Number <a onclick="FocusError('AddressBlank')"> Fix It</a></p></li>
+                                <li id="EmailBlank"><p class="error">Email May Not Be Blank <a onclick="FocusError('EmailBlank')"> Fix It</a></p></li>
+                                <li id="EmailError"><p class="error">Email Not Valid <a onclick="FocusError('EmailError')"> Fix It</a></p></li>
+                                <li id="PhoneBlank"><p class="error">Phone Number May Not Be Blank Or Less Than 10 Digits <a onclick="FocusError('PhoneBlank')"> Fix It</a></p></li>
+                                <li id="DateBlank"><p class="error">Date May Not Be Blank <a onclick="FocusError('DateBlank')"> Fix It</a></p></li>
+                                <li id="DateError"><p class="error">Date Error <a onclick="FocusError('DateError')"> Fix It</a></p></li>
+                                <li id="GenderBlank"><p class="error">Gender May Not Be Blank <a onclick="FocusError('GenderBlank')"> Fix It</a></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Success Modal Saved-->
+    <div class="modal fade  bs-example-modal-md" id="successmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md " role="document">
+            <div class="modal-content bg-2">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-centre text-green">Success</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-centre">Data Saved..</p>
+                    <table>
+                        <tr>
+                            <td><p>First Name </p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultFName"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Last Name </p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultLName"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p> Address</p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultAddress"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p> Email</p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultEmail"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p> Phone</p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultPhone"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Date Of Birth </p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultDate"></span></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Gender </p></td>
+                            <td><p> &nbsp;&nbsp;: <span id="resultGender"></span></p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="clearr" class="btn text-greenn" data-dismiss="modal">Close</button>
+                    <script type="text/javascript">
+                        document.getElementById('clearr').addEventListener('click', function(){
+                            this.form.reset();
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Success Modal Saved-->
+    <div class="modal fade  bs-example-modal-md" id="successmodalclear" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm " role="document">
+            <div class="modal-content bg-2">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-centre text-green">Success</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-centre">Form Cleared ..</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn text-greenn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Failed Modal Empty-->
+    <div class="modal fade  bs-example-modal-md" id="failedmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm " role="document">
+            <div class="modal-content bg-2">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-centre text-red">Warning</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-centre">All Field Must Be Filled !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn text-redd" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Failed Modal Not Valid-->
+    <div class="modal fade  bs-example-modal-md" id="failedmodalname" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm " role="document">
+            <div class="modal-content bg-2">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-centre text-red">Warning</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-centre">Data Not Valid !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn text-redd" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

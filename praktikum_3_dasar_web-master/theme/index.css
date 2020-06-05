@@ -1,0 +1,100 @@
+body{
+	margin: 0px;
+	height: 100%;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+div.header{
+	background-color: #009688;
+}
+
+div.body{
+	margin-top: -22px;
+	margin-bottom: -22px;
+	background-color: #E0E0E0;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	padding-top: 20px;
+}
+
+h1.header{
+	font-family: sans-serif;
+	color: #fff;
+	padding: 14px;
+}
+img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+img.me{
+	height: 250px;
+	width: 200px;
+}
+img.village{
+	display: block;
+    margin: auto;
+    height: 250px;
+	width: 340px;
+}
+img.home{
+    float: right;
+    height: 250px;
+	width: 340px;
+}
+img.kos{
+    height: 250px;
+    margin-bottom: 20px;
+  	float: left;
+	width: 280px;
+}
+p.pertama{
+	font-family: arial;
+	color: #F44336;
+	text-align:justify;
+}
+p.kedua{
+	font-family: tahoma;
+	color: #00C853;
+	text-align:justify;
+}
+p.ketiga{
+	font-size: 1.3em;
+	padding-top: 260px;
+	font-family: Times;
+	color: #00B8D4;
+	text-align:justify;
+}
+p.keempat{
+	position: relative;
+	font-size: 1.3em;
+	padding-left: 300px;
+	padding-top: 80px;
+	font-family: Times;
+	color: #F57F17;
+	text-align:justify;
+}
+
+a:link, a:visited {
+	background-color:  #009688;
+	color: white;
+	font-family: sans-serif;
+	font-size: 1.18em;
+	padding: 4px 6px;
+	margin-right: 8px;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 18px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover{
+	background-color: #F44336 ;
+}

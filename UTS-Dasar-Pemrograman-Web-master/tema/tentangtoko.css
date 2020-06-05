@@ -1,0 +1,87 @@
+body{
+	margin: 0px;
+	height: 100%;
+	font-family: sans-serif;
+	color: #ffffff;
+	text-align: justify;
+	background-color: #E0E0E0;
+}
+img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width:200px; 
+    height:260px;
+    margin-top: 40px;
+    float: left;
+}
+h1{
+	color: #000;
+	padding-top: 50px;
+}
+p.head{
+	color: #ffffff;
+}
+p{
+	color: black;
+}
+div.head{
+	margin-top: 0px;
+	align-items: center; 
+	min-height: 100%;
+}
+div.bg{
+	background-image: url(../sumberdaya/back.png); 
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+div.a{
+	position: relative; 
+	text-align: center;
+}
+
+div.b{
+	padding-top: 150px;
+	margin-right: auto; 
+	margin-left: auto;
+	padding-bottom: -30px;
+} 
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+div#about{
+	background-image: url(../assets/utm2.png); 
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 32%;
+}
+div.c{
+	padding: 70px 40px 20px; 
+}
+div.d{
+	
+	padding-left: 80px; 
+	padding-right: 80px;
+}
+div.e{
+	padding-left: 240px;
+}
+a:link, a:visited {
+	background-color: #0091EA;
+	color: white;
+	padding: 5px 8px;
+	margin-right: 6px;
+	border-radius: 2px;
+	font-size: 1.18em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 18px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover{
+	background-color: #F44336;
+}
