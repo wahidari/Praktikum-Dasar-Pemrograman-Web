@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard | Belajar Web</title>
+
+    <!-- Style Core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/send.js"></script>
+    <!-- Theme CSS -->
+    <link href="css/belajarhtml.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Belajar Web</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="belajarhtml.html">HTML</a>
+                    </li>
+                    <li>
+                        <a href="belajarcss.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="text-center admin">
+        <div class="container">
+            <div class="row">
+                <div class="container-id">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Tambah Materi</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="img/html512a.png" class="img-responsive img-admin" alt="...">
+                        <div class="caption">
+                            <h3>Materi HTML</h3>
+                            <h4><span id="jmlmaterihtml"></span>.</h4>
+                            <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah_html">Tambah</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/css512a.png" class="img-responsive img-admin" alt="...">
+                        <div class="caption">
+                            <h3>Materi CSS</h3>
+                            <h4><span id="jmlmatericss"></span>.</h4>
+                            <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah_css">Tambah</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="tambah_html" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Materi HTML</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="tambah-data" class="well">
+                        <form id="form-data">
+                            <div id="name-group" class="form-group">
+                                <label>Judul:</label> 
+                                <input type="text" class="form-control" id="inputjudul" placeholder="contoh: Pengenalan HTML" /><br/>
+                            </div>
+                            <div id="alamat-group" class="form-group">
+                                <label>Subjudul:</label> 
+                                <input type="text" class="form-control" id="inputsubjudul" placeholder="contoh: Dasar Tag HTML" /><br/>
+                            </div>
+                            <div id="ket-group" class="form-group">
+                                <label>Konten:</label> 
+                                <textarea class="form-control" id="inputkonten" placeholder="contoh: HTML adalah singkatan dari Hyper Text Markup Language. HTML mendeskripsikan struktur halaman sebuah website. Sebuah halaman HTML dibangun oleh blok-blok konten yang disebut elemen HTML."></textarea><br/>
+                            </div>
+                            <div id="ket-group1" class="form-group">
+                                <label>Kode: convert file html terlebih dahulu di http://www.freebits.co.uk/convert-html-code-to-text.html lalu sesuaikan tab indexing.</label> 
+                                <textarea class="form-control" id="inputkode">    
+                                </textarea>
+                                <br/>
+                            </div>
+                            <div id="alamat-group1" class="form-group">
+                                <label>Gambar:</label> 
+                                <input type="text" class="form-control" id="inputgambar" placeholder="contoh: http://www.malasngoding.com/wp-content/uploads/2016/01/belajar-html-menghubungkan-html-dengan-css-1.png" /><br/>
+                            </div>
+                            <input type="button" value="Simpan" onclick="simpanData();" class="btn btn-success btn-small"/>
+                            <input type="reset" value="Reset" onclick="" class="btn btn-warning btn-small"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tambah_css" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tambah Materi CSS</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="tambah-data2" class="well">
+                        <form id="form-data2">
+                            <div id="name-group2" class="form-group">
+                                <label>Judul:</label> 
+                                <input type="text" class="form-control" id="inputjudulcss" placeholder="contoh: Padding CSS" /><br/>
+                            </div>
+                            <div id="alamat-group2" class="form-group">
+                                <label>Subjudul:</label> 
+                                <input type="text" class="form-control" id="inputsubjudulcss" placeholder="contoh: Pengenalan Padding Pada CSS" /><br/>
+                            </div>
+                            <div id="ket-group2" class="form-group">
+                                <label>Konten:</label> 
+                                <textarea class="form-control" id="inputkontencss" placeholder="contoh: Padding adalah sebutan untuk spasi atau ruang diantara konten dan border. Gambar CSS Box Model berikut bisa menjelaskan dimana letak padding ini."></textarea><br/>
+                            </div>
+                            <div id="ket-group3" class="form-group">
+                                <label>Kode HTML: convert file html terlebih dahulu di http://www.freebits.co.uk/convert-html-code-to-text.html lalu sesuaikan tab indexing.</label> 
+                                <textarea class="form-control" id="inputkodecss">    
+                                </textarea><br/>
+                            </div>
+                            <div id="ket-group4" class="form-group">
+                                <label>Kode CSS:</label> 
+                                <textarea class="form-control" id="inputkodecss1"  placeholder="contoh:  
+.btn-learn{
+    padding: 8px;
+    max-width: 150px;
+}"> 
+                                </textarea><br/>
+                            </div>
+                            <div id="alamat-group7" class="form-group">
+                                <label>Gambar:</label> 
+                                <input type="text" class="form-control" id="inputgambarcss" placeholder="contoh: http://www.malasngoding.com/wp-content/uploads/2016/01/belajar-html-menghubungkan-html-dengan-css-1.png" /><br/>
+                            </div>
+                            <input type="button" value="Simpan" onclick="simpanDataCSS();" class="btn btn-success btn-small"/>
+                            <input type="reset" value="Reset" onclick="" class="btn btn-warning btn-small"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Belajar Web 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Style Core JavaScript -->
+    <script src="js/style.js"></script>
+
+</body>
+</html>
